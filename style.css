@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Finger Paint', cursive;
+}
+
+.game-heading {
+    margin-top: -50px;
+    text-align: center;
+    color: #e7c264;
+    font-size: 6vw;
+}
+
+.turn-para {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #e7c264;
+}
+
+.main-container {
+    width: 100%;
+    height: 100vh;
+    background-color: #36505c;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-box {
+    display: grid;
+    grid-template-columns: repeat(3, 8vw);
+    grid-template-rows: repeat(3, 8vw);
+    border-top: 0px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    border: 2px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    color: #e7c264;
+}
+
+.box:hover {
+    background-color: #2e414a;
+}
+
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+.resetBtn {
+    color: #36505c;
+    background-color: #e7c264;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+    .game-box {
+        grid-template-columns: repeat(3, 10vw);
+        grid-template-columns: repeat(3, 10vw);
+    }
+}
